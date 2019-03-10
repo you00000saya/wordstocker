@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void startSearch(){
         Intent intent = new Intent(this, WebViewActivity.class);
-//        intent.putExtra(Intent.EXTRA_EMAIL, recipientArray);
+        intent.putExtra("searchText", this.textSearch.getText().toString());
         startActivity(intent);
     }
 }
